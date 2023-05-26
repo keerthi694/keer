@@ -1,6 +1,6 @@
 pipeline:
   identifier: Build_keer_1685085948015
-  name: Build keer
+  name: demo
   orgIdentifier: default
   projectIdentifier: harness_demo
   properties:
@@ -42,6 +42,13 @@ pipeline:
                       tags: latest
                   timeout: ""
                   type: Plugin
+              - step:
+                  type: Run
+                  name: Echo welcome message
+                  identifier: Echo_welcome_message
+                  spec:
+                    shell: Sh
+                    command: welcome to CI
           platform:
             arch: Amd64
             os: Linux
@@ -49,3 +56,4 @@ pipeline:
             spec: {}
             type: Cloud
         type: CI
+  tags: {}
