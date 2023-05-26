@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_keer_1685085948015-pr-trigger-input-set
+  identifier: Build_keer_1685085948015prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: harness_demo
+  pipeline:
+    identifier: Build_keer_1685085948015
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
