@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_keer_1685960283900-push-trigger-input-set
+  identifier: Build_keer_1685960283900pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: Demo1
+  pipeline:
+    identifier: Build_keer_1685960283900
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
