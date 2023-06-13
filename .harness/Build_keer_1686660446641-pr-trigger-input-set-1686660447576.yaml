@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_keer_1686660446641-pr-trigger-input-set
+  identifier: Build_keer_1686660446641prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: Echo_welcome_message
+  pipeline:
+    identifier: Build_keer_1686660446641
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
